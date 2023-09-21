@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Latar belakang hitam */
+            color: #fff; /* Warna teks putih */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .form-box {
+            background-color: #fff; /* Latar belakang putih */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 300px; /* Atur lebar sesuai kebutuhan */
+            text-align: center;
+            color: #000; /* Warna teks hitam */
+        }
+
+        .inputbox {
+            margin: 10px 0;
+            position: relative;
+        }
+
+        .inputbox ion-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 10px;
+            color: #333; /* Warna ikon */
+        }
+
+        .inputbox input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #333; /* Garis bawah */
+        }
+
+        .inputbox label {
+            position: absolute;
+            pointer-events: none;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: 0.2s;
+            color: #333; /* Warna label */
+        }
+
+        .inputbox input:focus + label,
+        .inputbox input:valid + label {
+            transform: translateY(-130%);
+            font-size: 12px;
+            color: #333; /* Warna label saat input aktif atau memiliki nilai */
+        }
+
+        .forget {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #333; /* Warna teks di dalam .forget */
+        }
+
+        button {
+            background-color: #333; /* Warna tombol */
+            color: #fff; /* Warna teks tombol */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #555; /* Warna tombol saat dihover */
+        }
+
+        .register {
+            margin-top: 10px;
+            color: #333; /* Warna teks di dalam .register */
+        }
+
+        a {
+            color: #333; /* Warna tautan */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <div class="form-box">
+                <form action="">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required>
+                        <label for="">Password</label>
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Remember Me </label>
+                        <a href="login.html" class="forget-password">Forgot Password</a>
+                    </div>
+                    <button>Log in</button>
+                    <div class="register">
+                        <p>Don't have an account?<a href="#">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+    <script type="module" src="https://unkpg.com/ionicon@s5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unkpg.com/ionicon@s5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
