@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playpen Sans', cursive;
+}
+
+body {
+    width: 100%;
+    background: url(/img/3.jpg);
+    background-size: cover;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background: transparent;
+    z-index: 99;
+    animation: fadeUp 2s ease ;
+}
+
+.logo {
+    font-size: 2em;
+    color: black;
+    user-select: none;
+    animation: fadeUp 2s ease ;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+
+.navigation a:hover::after{
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: black;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: #fff;
+    color: #162938;
+}
+
+.title h1 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 42px;
+    animation: fadeUp 2s ease ;
+}
+
+.title h1::after {
+    content: "";
+    height: 4px;
+    width: 230px;
+    background-color: #000;
+    margin: auto;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    animation: fadeUp 2s ease ;
+}
+
+.card {
+    flex: 1;
+    margin: 0 20px;
+    padding: 20px;
+    background-color: #efefef;
+    cursor: pointer;
+    text-align: center;
+    animation: fadeUp 2s ease ;
+}
+
+.card h2 {
+    font-size: 28px;
+    color: #c94f4f;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 17px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #5e5e5e;
+}
+
+.card:hover {
+    background-color: #b8d4de;
+    transition: 0.4s ease;
+}
+
+.card .icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.section .title h1{
+    margin-top: 35px;
+}
+
+@media screen and (max-width: 940px) {
+    .services {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 1;
+        width: 85%;
+        display: flex;
+        margin: 20px 0px;
+    }
+}
+
+
+@keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
