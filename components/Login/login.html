@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="table-container">
+    <div class="table">
+      <div class="table_header">
+        <p>Daftar Produk</p>
+        <div>
+          <input placeholder="product" />
+          <button class="add_new">+ Add New</button>
+        </div>
+      </div>
+      <div class="table-section">
+        <table>
+          <thead>
+            <tr>
+              <th>S No</th>
+              <th>Barang</th>
+              <th>Nama</th>
+              <th>Email</th>
+              <th>Jumlah Barang</th>
+              <th>Harga Kiloan</th>
+              <th>Total Harga</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="fixed-row">
+              <td>1</td>
+              <td><img src="/img/bb1.jpg"></td>
+              <td>Baju</td>
+              <td>Zozo@gmai.com</td>
+              <td>
+                <button class="quantity-button minus-button"><i class="fa-solid fa-minus"></i></button>
+                <span class="quantity-value">1</span>
+                <button class="quantity-button plus-button"><i class="fa-solid fa-plus"></i></button>
+              </td>
+              <td>Rp.6.000</td>
+              <td class="total-cost-cell">Rp.3.000</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><img src="/img/p1.jpg"></td>
+              <td>Celana Panjang</td>
+              <td>Zozo@gmail.com</td>
+              <td>
+                <button class="quantity-button minus-button"><i class="fa-solid fa-minus"></i></button>
+                <span class="quantity-value">1</span>
+                <button class="quantity-button plus-button"><i class="fa-solid fa-plus"></i></button>
+              </td>
+              <td>Rp.12.000</td>
+              <td class="total-cost-cell">Rp.12.000</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><img src="/img/p2.jpg"></td>
+              <td>Celana Pendek</td>
+              <td>Loolangchawnimale@gmail.com</td>
+              <td>
+                <button class="quantity-button minus-button"><i class="fa-solid fa-minus"></i></button>
+                <span class="quantity-value">1</span>
+                <button class="quantity-button plus-button"><i class="fa-solid fa-plus"></i></button>
+              </td>
+              <td>Rp.6.000</td>
+              <td class="total-cost-cell">Rp.5.000</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><img src="/img/kk1.jpg"></td>
+              <td>Kaos Kaki</td>
+              <td>uklaundry@gmail.com</td>
+              <td>
+                <button class="quantity-button minus-button"><i class="fa-solid fa-minus"></i></button>
+                <span class="quantity-value">1</span>
+                <button class="quantity-button plus-button"><i class="fa-solid fa-plus"></i></button>
+              </td>
+              <td>Rp.4.000</td>
+              <td class="total-cost-cell">Rp.2.000</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td><img src="/img/cd1.jpg"></td>
+              <td>Celana Dalam</td>
+              <td>LaundryKohAtong@gmail.com</td>
+              <td>
+                <button class ="quantity-button minus-button"><i class="fa-solid fa-minus"></i></button>
+                <span class="quantity-value">1</span>
+                <button class="quantity-button plus-button"><i class="fa-solid fa-plus"></i></button>
+              </td>
+              <td>Rp.3.500</td>
+              <td class="total-cost-cell">Rp.2.500</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td><img src="/img/jas.jpg"></td>
+              <td>Jas Pria</td>
+              <td>Loremipsumdolor@gmai.com</td>
+              <td>
+                <button class="quantity-button minus-button"><i class="fa-solid fa-minus"></i></button>
+                <span class="quantity-value">1</span>
+                <button class="quantity-button plus-button"><i class="fa-solid fa-plus"></i></button>
+              </td>
+              <td>Rp.20.000</td>
+              <td class="total-cost-cell">Rp.18.000</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td><img src="/img/order.jpg"></td>
+              <td>Paket Komplit</td>
+              <td>Loremipsumdolor@gmai.com</td>
+              <td>
+                <button class="quantity-button minus-button"><i class="fa-solid fa-minus"></i></button>
+                <span class="quantity-value">1</span>
+                <button class="quantity-button plus-button"><i class="fa-solid fa-plus"></i></button>
+              </td>
+              <td>Rp.25.000</td>
+              <td class="total-cost-cell">Rp.25.000</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td><img src="/img/order1.jpg"></td>
+              <td>Paket Express</td>
+              <td>Loremipsumdolor@gmai.com</td>
+              <td>
+                <button class="quantity-button minus-button"><i class="fa-solid fa-minus"></i></button>
+                <span class="quantity-value">1</span>
+                <button class="quantity-button plus-button"><i class="fa-solid fa-plus"></i></button>
+              </td>
+              <td>Rp.28.000</td>
+              <td class="total-cost-cell">Rp.27.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="pagination">
+      <div><i class="fa-solid fa-angles-left"></i></div>
+      <div><i class="fa-solid fa-angle-left"></i></div>
+      <div>1</div>
+      <div>2</div>
+      <div><i class="fa-solid fa-chevron-right"></i></div>
+      <div><i class="fa-solid fa-angles-right"></i></div>
+    </div>
+</div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.plus-button').click(function() {
+        var quantityValue = $(this).siblings('.quantity-value');
+        var currentValue = parseInt(quantityValue.text());
+        quantityValue.text(currentValue + 1);
+        updateTotalCost(this);
+      });
+
+      $('.minus-button').click(function() {
+        var quantityValue = $(this).siblings('.quantity-value');
+        var currentValue = parseInt(quantityValue.text());
+        if (currentValue > 1) {
+          quantityValue.text(currentValue - 1);
+          updateTotalCost(this);
+        }
+      });
+
+      function updateTotalCost(button) {
+        var row = $(button).closest('tr');
+        var priceCell = row.find('td:nth-child(6)');
+        var quantityCell = row.find('.quantity-value');
+        var totalCostCell = row.find('.total-cost-cell');
+        var priceText = priceCell.text();
+        var priceValue = parseFloat(priceText.replace("Rp.", "").replace(",", ""));
+        var quantity = parseInt(quantityCell.text());
+        var totalCost = (priceValue * quantity).toFixed(3); // Display up to 3 decimal places
+        totalCostCell.text('Rp.' + totalCost);
+      }
+    });
+  </script>
+</body>
+</html>
