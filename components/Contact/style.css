@@ -154,6 +154,7 @@ section::after {
 }
 
 .container {
+    margin-top: 10px;
     position: relative;
     z-index: 1;
     display: flex;
@@ -164,6 +165,7 @@ section::after {
 }
 
 .container .card {
+    margin-top: 10px;
     position: relative;
     width: 300px;
     height: 400px;

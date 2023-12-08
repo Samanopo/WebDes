@@ -1,5 +1,5 @@
 body {
-    background-color: #6e9ed6;
+    background: rgb(146, 207, 207);
     color: #fff;
     font-family: system-ui;
 }
@@ -86,7 +86,7 @@ header .shopping span {
     left: 100%;
     width: 100%;
     max-width: 500px;
-    background-color: #453e3b;
+    background-color: rgb(1, 154, 154);
     height: 100vh;
     transition: 0.5s;
 }
@@ -100,7 +100,7 @@ header .shopping span {
 }
 
 .card h1 {
-    color: #e8bc0e;
+    color: #fff;
     font-weight: 100;
     margin: 0;
     padding: 0 20px;
@@ -118,7 +118,7 @@ header .shopping span {
 }
 
 .card .checkOut div {
-    background-color: #e8bc0e;
+    background-color: #fff;
     width: 100%;
     height: 70px;
     display: flex;
@@ -166,6 +166,10 @@ header .shopping span {
 
 .stars div {
     display: inline-block;
+}
+
+.total {
+    color: #1c1f25;
 }
 
 /* Media Query for smaller screens */

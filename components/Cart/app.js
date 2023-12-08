@@ -17,48 +17,48 @@ closeShopping.addEventListener('click', () => {
 let products = [
     {
         id: 1,
-        name: 'BAJU DAN CELANA',
-        image: 'baju.png',
+        name: 'Clothes and Pants',
+        image: 'laun.png',
         price: 10000,
         rating: 4,
         laundryName: 'Laundry A'
     },
     {
         id: 2,
-        name: 'PAKET CUCI SETRIKA',
-        image: 'order.jpg',
+        name: 'Ironing',
+        image: 'laun.png',
         price: 20000,
         rating: 3,
         laundryName: 'Laundry B'
     },
     {
         id: 3,
-        name: 'CUCI KERING',
-        image: 'kering.jpg',
+        name: 'Dry Cleaning',
+        image: 'laun.png',
         price: 17000,
         rating: 5,
         laundryName: 'Laundry C'
     },
     {
         id: 4,
-        name: 'CUCI BASAH',
-        image: 'basah.jpg',
+        name: 'Wet Cleaning',
+        image: 'laun.png',
         price: 12000,
         rating: 4,
         laundryName: 'Laundry D'
     },
     {
         id: 5,
-        name: 'PAKET KILAT',
-        image: 'kilat.jpg',
+        name: 'Express Package',
+        image: 'laun.png',
         price: 20000,
         rating: 2,
         laundryName: 'Laundry E'
     },
     {
         id: 6,
-        name: 'PAKET KOMPLIT',
-        image: 'paket.jpg',
+        name: 'Complete Package',
+        image: 'laun.png',
         price: 32000,
         rating: 5,
         laundryName: 'Laundry F'
