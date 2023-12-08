@@ -6,12 +6,15 @@
 }
 
 body {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     background: rgb(146, 207, 207);
-    background: url(/img/3.jpg);
+    background: url(/img/3.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     min-height: 100vh;
 }
 
@@ -154,23 +157,21 @@ section::after {
 }
 
 .container {
-    margin-top: 10px;
     position: relative;
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 40px;
 }
 
 .container .card {
-    margin-top: 10px;
+    margin-top: 20px;
     position: relative;
     width: 300px;
     height: 400px;
     background: rgba(255, 255, 255, 0.05);
-    margin: 20px;
+    margin: 30px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     display: flex;
@@ -293,7 +294,6 @@ section::after {
     color: #000;
     font-size: 16px;
 }
-
 
 @media (max-width: 992px) {
     .header {
